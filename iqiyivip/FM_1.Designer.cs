@@ -129,11 +129,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(187, 82);
+            this.label1.Location = new System.Drawing.Point(174, 87);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(239, 24);
+            this.label1.Size = new System.Drawing.Size(269, 12);
             this.label1.TabIndex = 8;
-            this.label1.Text = "建议使用线路2、3、5，若软件中无法打开，\r\n则取消选择，在浏览器中打开";
+            this.label1.Text = "若软件中无法打开，则取消选择，在浏览器中打开";
             // 
             // btn_senior
             // 
