@@ -1,4 +1,4 @@
-﻿namespace iqiyivip
+﻿namespace VideoVIP
 {
     partial class FM_1
     {

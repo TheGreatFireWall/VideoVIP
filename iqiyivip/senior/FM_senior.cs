@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace iqiyivip
+namespace VideoVIP
 {
     public partial class FM_senior : Form
     {
@@ -40,6 +40,13 @@ namespace iqiyivip
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             System.Diagnostics.Process.Start("https://github.com/TheGreatFireWall/VideoVIP");
+        }
+
+        private void btn_getVideoVIP_Click(object sender, EventArgs e)
+        {
+            FM_getvip son = new FM_getvip();
+            son.Owner = this;
+            son.Show();
         }
     }
 }

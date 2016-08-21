@@ -70,6 +70,12 @@
     <Compile Include="FM_1.Designer.cs">
       <DependentUpon>FM_1.cs</DependentUpon>
     </Compile>
+    <Compile Include="senior\FM_getvip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="senior\FM_getvip.Designer.cs">
+      <DependentUpon>FM_getvip.cs</DependentUpon>
+    </Compile>
     <Compile Include="senior\FM_ad.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FM_readme.resx">
       <DependentUpon>FM_readme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="senior\FM_getvip.resx">
+      <DependentUpon>FM_getvip.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="senior\FM_senior.resx">
       <DependentUpon>FM_senior.cs</DependentUpon>

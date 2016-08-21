@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
 
-namespace iqiyivip
+namespace VideoVIP
 {
     public partial class FM_watch : Form
     {
