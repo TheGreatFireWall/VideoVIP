@@ -76,7 +76,7 @@ namespace iqiyivip
                 url = xianlu(5, text_url.Text);
             if (checkBox.Checked == true)
             {
-                if (xl1.Checked || xl4.Checked)
+                if (xl1.Checked)
                 {
                     MessageBox.Show("该线路不可以在软件中播放");
                     return;
@@ -195,18 +195,18 @@ namespace iqiyivip
             }
             if (num == 2)   //线路2(通用)
             {
-                //if (videosource(url) == "qq")
-                //{
-                //    if (checkBox.Checked)
-                //    {
-                //        MessageBox.Show("线路2不能再软件中播放QQ视频");
-                //        return "";
-                //    }
-                //    else
-                //        url = "http://www.aikantv.cc/ydisk/qq.php?url=http://" + url.Replace("http://", "");
-                //}
-                //else
-                    url = "http://api.aikantv.cc/?url=" + url.Replace("http://", "");
+                if (videosource(url) == "qq")
+                    url = "http://api.aikantv.cc/qq.php?url=http://" + url.Replace("http://", "");
+                else if (videosource(url) == "iqiyi")
+                    url = "http://api.aikantv.cc/qiyi.php?url=http://" + url.Replace("http://", "");
+                else if (videosource(url) == "mgtv")
+                    url = "http://api.aikantv.cc/mgvip.php?url=http://" + url.Replace("http://", "");
+                else if (videosource(url) == "le")
+                    url = "http://api.aikantv.cc/letv,php?url=http://" + url.Replace("http://", "");
+                else if (videosource(url) == "youku")
+                    url = "http://api.aikantv.cc/youku.php?url=http://" + url.Replace("http://", "");
+                else
+                    url = "http://api.aikantv.cc/?url=http://" + url.Replace("http://", "");
                 return url;
             }
             if (num == 3)   //线路3(通用)
@@ -214,20 +214,12 @@ namespace iqiyivip
                 url = "http://ckplayer.duapp.com/player.php?url=http://" + url.Replace("http://", "");
                 return url;
             }
-            if (num == 4)  //线路4(qq)
+            if (num == 4)  //线路4(通用)
             {
-                if (videosource(url) == "qq")
-                {
-                    url = "http://dev.jywh.jinrgame.com/index.php?link=http://" + url.Replace("http://", "") + "&ctrl=site&action=testtx";
-                    return url;
-                }
-                else
-                {
-                    MessageBox.Show("线路4只支持QQ！");
-                    return "";
-                }
+                url = "http://cs.71ki.com/ydisk/?url=http://" + url.Replace("http://", "");
+                return url;
             }
-            if (num == 5)  //线路5(==辣鸡接口，爱奇艺解析用完了)
+            if (num == 5)  //线路5(的除QQ的解析死了)
             {
                 if (videosource(url) == "qq")
                     url = "http://www.avziliao.com/ydisk/qq.php?url=http://" + url.Replace("http://", "");
@@ -258,25 +250,20 @@ namespace iqiyivip
 //优酷网VIP、乐视网VIP、芒果VIP、奇艺VIP、腾讯VIP、土豆网、哔哩哔哩、AC弹幕网、华数网、酷6网、56网、CNTV网、
 //风行网、搜狐视频、糖豆网、微录客、哇趣网、爱拍网、音悦台、优米网、m1905网、秒拍网、美拍网、6房间、网易公开课、
 //暴风影音、爆米花、虎牙视频、凤凰视频、龙珠视频、新浪视频、YY神曲等等
-//@全体成员 临时接口，你们先试试
 
 //腾讯VIP解析接口 : http://cs.71ki.com/ydisk/qq.php?url=后面加上播放的地址即可
 //优酷云解析接口 : http://cs.71ki.com/ydisk/yc.php?vid=后面加上C值即可
 //万能解析统一接口 : http://cs.71ki.com/ydisk/?url=后面加上播放的地址即可
 
-//腾讯VIP解析接口 : http://api888.duapp.com/ydisk/qq.php?url= 后面加上播放的地址即可
-//优酷云解析接口 : http://api888.duapp.com/ydisk/yc.php?vid= 后面加上C值即可
-//万能解析统一接口 : http://api888.duapp.com/ydisk/?url= 面加上播放的地址即可
 
 //    （8月20日）解析接口更新
 //通用解析接口 http://api.aikantv.cc/?url=
-//优酷解析接口 http://api.aikantv.cc/youku.php?url=
+//优酷解析接口 http://api.aikantv.cc/youku.php?url=
 //优酷云C值解析接口 http://api.aikantv.cc/yc.php?vid=
 //新增以下接口
-//乐视 http://api.aikantv.cc/letv.php?url=
-//芒果 http://api.aikantv.cc/mgvip.php?url=
+//乐视 http://api.aikantv.cc/letv.php?url=
+//芒果 http://api.aikantv.cc/mgvip.php?url=
 //奇异 http://api.aikantv.cc/qiyi.php?url=
-//腾讯 http://api.aikantv.cc/qq.php?url=
+//腾讯 http://api.aikantv.cc/qq.php?url=
 //【其中腾讯的暂时限制了青云志，其他的都可以】
 
-//http://www.dyued.com/
