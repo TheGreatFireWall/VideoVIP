@@ -25,10 +25,7 @@ namespace VideoVIP
             label1.Visible = false;
             this.Size = new Size(570, 380);
             string ip = randomip();
-            string time = DateTime.Now.ToShortDateString() + "/" + DateTime.Now.ToShortTimeString();
-            time = time.Remove(time.IndexOf(":"));
-            time = time.Replace("/", "-");
-            time = time.Replace(" ", "-");
+            string time = standardtime();
             webBrowser1.Document.Cookie = "zhujiwusysdomain=ftp593852.host551.zhujiwu.me; CookieZJWFANGDAOLIAN=" + ip + "#" + time + "#ftp593852.host551.zhujiwu.me; IP=" + ip;
             webBrowser1.Refresh();
         }
@@ -37,6 +34,14 @@ namespace VideoVIP
             Random ra = new Random();
             return Convert.ToString(ra.Next(1, 255)) + "." + Convert.ToString(ra.Next(1, 255)) + "."
                 + Convert.ToString(ra.Next(1, 255)) + "." + Convert.ToString(ra.Next(1, 255));
+        }
+        private string standardtime()
+        {
+            string time = DateTime.Now.ToShortDateString() + "/" + DateTime.Now.ToShortTimeString();
+            time = time.Remove(time.IndexOf(":"));
+            time = time.Replace("/", "-");
+            time = time.Replace(" ", "-");
+            return time;
         }
     }
 }
