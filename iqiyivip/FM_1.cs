@@ -202,7 +202,7 @@ namespace VideoVIP
                 else if (videosource(url) == "mgtv")
                     url = "http://api.aikantv.cc/mgvip.php?url=http://" + url.Replace("http://", "");
                 else if (videosource(url) == "le")
-                    url = "http://api.aikantv.cc/letv,php?url=http://" + url.Replace("http://", "");
+                    url = "http://api.aikantv.cc/letv.php?url=http://" + url.Replace("http://", "");
                 else if (videosource(url) == "youku")
                     url = "http://api.aikantv.cc/youku.php?url=http://" + url.Replace("http://", "");
                 else
