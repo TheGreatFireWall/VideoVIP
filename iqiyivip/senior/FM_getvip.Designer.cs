@@ -32,6 +32,8 @@
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.btn_get = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.btn_getmore = new System.Windows.Forms.Button();
+            this.text_psw = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // webBrowser1
@@ -47,7 +49,7 @@
             // 
             // btn_get
             // 
-            this.btn_get.Location = new System.Drawing.Point(54, 136);
+            this.btn_get.Location = new System.Drawing.Point(12, 136);
             this.btn_get.Name = "btn_get";
             this.btn_get.Size = new System.Drawing.Size(75, 23);
             this.btn_get.TabIndex = 1;
@@ -65,11 +67,34 @@
             this.label1.Text = "本工具用于在线获取爱奇艺VIP\r\n\r\n爱奇艺会员是第三方所提供\r\n\r\n点击获取VIP然后输入验证码\r\n\r\n提交订单即可\r\n\r\n若提示输入密码，密码是\r\na8686" +
     "9390A";
             // 
+            // btn_getmore
+            // 
+            this.btn_getmore.Location = new System.Drawing.Point(105, 136);
+            this.btn_getmore.Name = "btn_getmore";
+            this.btn_getmore.Size = new System.Drawing.Size(75, 23);
+            this.btn_getmore.TabIndex = 3;
+            this.btn_getmore.Text = "获取更多";
+            this.btn_getmore.UseVisualStyleBackColor = true;
+            this.btn_getmore.Click += new System.EventHandler(this.btn_getmore_Click);
+            // 
+            // text_psw
+            // 
+            this.text_psw.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.text_psw.Location = new System.Drawing.Point(12, 13);
+            this.text_psw.Name = "text_psw";
+            this.text_psw.ReadOnly = true;
+            this.text_psw.Size = new System.Drawing.Size(100, 14);
+            this.text_psw.TabIndex = 4;
+            this.text_psw.Text = "密码: a86869390A";
+            this.text_psw.Visible = false;
+            // 
             // FM_getvip
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(209, 164);
+            this.Controls.Add(this.text_psw);
+            this.Controls.Add(this.btn_getmore);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_get);
             this.Controls.Add(this.webBrowser1);
@@ -87,5 +112,7 @@
         private System.Windows.Forms.WebBrowser webBrowser1;
         private System.Windows.Forms.Button btn_get;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btn_getmore;
+        private System.Windows.Forms.TextBox text_psw;
     }
 }

@@ -25,7 +25,7 @@
     <MapFileExtensions>true</MapFileExtensions>
     <UpdateUrl>https://github.com/TheGreatFireWall/VideoVIP/raw/master/VideoVIP_Release.exe/</UpdateUrl>
     <MinimumRequiredVersion>1.3.1.1</MinimumRequiredVersion>
-    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationRevision>2</ApplicationRevision>
     <ApplicationVersion>1.3.1.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
@@ -71,6 +71,12 @@
     </Compile>
     <Compile Include="FM_1.Designer.cs">
       <DependentUpon>FM_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="senior\FM_download.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="senior\FM_download.Designer.cs">
+      <DependentUpon>FM_download.cs</DependentUpon>
     </Compile>
     <Compile Include="senior\FM_getvip.cs">
       <SubType>Form</SubType>
@@ -118,6 +124,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FM_readme.resx">
       <DependentUpon>FM_readme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="senior\FM_download.resx">
+      <DependentUpon>FM_download.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="senior\FM_getvip.resx">
       <DependentUpon>FM_getvip.cs</DependentUpon>

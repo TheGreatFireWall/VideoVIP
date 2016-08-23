@@ -15,18 +15,20 @@ namespace VideoVIP
         public FM_getvip()
         {
             InitializeComponent();
-            webBrowser1.Navigate("http://ftp593852.host551.zhujiwu.me/");
         }
 
         private void btn_get_Click(object sender, EventArgs e)
         {
+            webBrowser1.Navigate("http://ftp593852.host551.zhujiwu.me/");
             webBrowser1.Visible = true;
             btn_get.Visible = false;
+            btn_getmore.Visible = false;
             label1.Visible = false;
+            text_psw.Visible = true;
             this.Size = new Size(570, 380);
-            string ip = randomip();
-            string time = standardtime();
-            webBrowser1.Document.Cookie = "zhujiwusysdomain=ftp593852.host551.zhujiwu.me; CookieZJWFANGDAOLIAN=" + ip + "#" + time + "#ftp593852.host551.zhujiwu.me; IP=" + ip;
+            //string ip = randomip();
+            //string time = standardtime();
+            //webBrowser1.Document.Cookie = "zhujiwusysdomain=ftp593852.host551.zhujiwu.me; CookieZJWFANGDAOLIAN=" + ip + "#" + time + "#ftp593852.host551.zhujiwu.me; IP=" + ip;
             webBrowser1.Refresh();
         }
         private string randomip()
@@ -42,6 +44,18 @@ namespace VideoVIP
             time = time.Replace("/", "-");
             time = time.Replace(" ", "-");
             return time;
+        }
+
+        private void btn_getmore_Click(object sender, EventArgs e)
+        {
+            string url = "http://www.ck66.cn/about/vip/";
+            webBrowser1.Navigate(url);
+            webBrowser1.Visible = true;
+            btn_getmore.Visible = false;
+            btn_get.Visible = false;
+            label1.Visible = false;
+            this.Size = new Size(570, 380);
+            webBrowser1.Refresh();
         }
     }
 }

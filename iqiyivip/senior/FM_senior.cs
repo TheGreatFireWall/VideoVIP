@@ -47,6 +47,15 @@ namespace VideoVIP
             FM_getvip son = new FM_getvip();
             son.Owner = this;
             son.Show();
+            this.Hide();
+        }
+
+        private void btn_download_Click(object sender, EventArgs e)
+        {
+            FM_download son = new FM_download();
+            son.Owner = this;
+            son.Show();
+            this.Hide();
         }
     }
 }

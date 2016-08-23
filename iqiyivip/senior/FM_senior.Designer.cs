@@ -36,6 +36,7 @@
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.label3 = new System.Windows.Forms.Label();
             this.btn_getVideoVIP = new System.Windows.Forms.Button();
+            this.btn_download = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_ad
@@ -50,7 +51,7 @@
             // 
             // btn_update
             // 
-            this.btn_update.Location = new System.Drawing.Point(94, 13);
+            this.btn_update.Location = new System.Drawing.Point(175, 13);
             this.btn_update.Name = "btn_update";
             this.btn_update.Size = new System.Drawing.Size(75, 23);
             this.btn_update.TabIndex = 1;
@@ -60,7 +61,7 @@
             // 
             // btn_supply
             // 
-            this.btn_supply.Location = new System.Drawing.Point(256, 13);
+            this.btn_supply.Location = new System.Drawing.Point(337, 13);
             this.btn_supply.Name = "btn_supply";
             this.btn_supply.Size = new System.Drawing.Size(75, 23);
             this.btn_supply.TabIndex = 2;
@@ -109,7 +110,7 @@
             // 
             // btn_getVideoVIP
             // 
-            this.btn_getVideoVIP.Location = new System.Drawing.Point(175, 13);
+            this.btn_getVideoVIP.Location = new System.Drawing.Point(256, 13);
             this.btn_getVideoVIP.Name = "btn_getVideoVIP";
             this.btn_getVideoVIP.Size = new System.Drawing.Size(75, 23);
             this.btn_getVideoVIP.TabIndex = 7;
@@ -117,11 +118,22 @@
             this.btn_getVideoVIP.UseVisualStyleBackColor = true;
             this.btn_getVideoVIP.Click += new System.EventHandler(this.btn_getVideoVIP_Click);
             // 
+            // btn_download
+            // 
+            this.btn_download.Location = new System.Drawing.Point(94, 13);
+            this.btn_download.Name = "btn_download";
+            this.btn_download.Size = new System.Drawing.Size(75, 23);
+            this.btn_download.TabIndex = 8;
+            this.btn_download.Text = "下载";
+            this.btn_download.UseVisualStyleBackColor = true;
+            this.btn_download.Click += new System.EventHandler(this.btn_download_Click);
+            // 
             // FM_senior
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(343, 160);
+            this.ClientSize = new System.Drawing.Size(429, 160);
+            this.Controls.Add(this.btn_download);
             this.Controls.Add(this.btn_getVideoVIP);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.linkLabel1);
@@ -150,5 +162,6 @@
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btn_getVideoVIP;
+        private System.Windows.Forms.Button btn_download;
     }
 }
