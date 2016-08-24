@@ -168,6 +168,8 @@ namespace VideoVIP
                 return "le";
             else if (url.IndexOf("le.com") != -1)
                 return "le";
+            else if (url.IndexOf("sohu.com") != -1)
+                return "sohu";
             else
                 return "";
         }
@@ -178,6 +180,7 @@ namespace VideoVIP
         /// <param name="num">选择线路号</param>
         /// <param name="url">地址</param>
         /// <returns></returns>
+        /// 更新无力……接口经常死。可以加群233797461（群主是线路2的提供者），群里有一些接口更新
         private string xianlu(int num, string url)
         {
             if (num == 1)   //线路1(爱奇艺)
@@ -225,9 +228,7 @@ namespace VideoVIP
                     url = "http://www.avziliao.com/ydisk/qq.php?url=http://" + url.Replace("http://", "");
                 else
                 {
-                    MessageBox.Show("线路5的除QQ的解析死了");
-                    return "";
-                    //url = "http://www.avziliao.com/ydisk/index.php?url=http://" + url.Replace("http://", "");
+                    url = "http://www.avziliao.com/ydisk/index.php?url=http://" + url.Replace("http://", "");
                 }
                 return url;
             }
