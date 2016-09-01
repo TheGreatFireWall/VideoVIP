@@ -55,7 +55,7 @@
             this.btn_update.Name = "btn_update";
             this.btn_update.Size = new System.Drawing.Size(75, 23);
             this.btn_update.TabIndex = 1;
-            this.btn_update.Text = "更新";
+            this.btn_update.Text = "作者主页";
             this.btn_update.UseVisualStyleBackColor = true;
             this.btn_update.Click += new System.EventHandler(this.btn_update_Click);
             // 
@@ -85,7 +85,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(71, 12);
             this.label2.TabIndex = 4;
-            this.label2.Text = "V1.3.0 Beta";
+            this.label2.Text = "V1.3.1 Beta";
             // 
             // linkLabel1
             // 
@@ -114,7 +114,7 @@
             this.btn_getVideoVIP.Name = "btn_getVideoVIP";
             this.btn_getVideoVIP.Size = new System.Drawing.Size(75, 23);
             this.btn_getVideoVIP.TabIndex = 7;
-            this.btn_getVideoVIP.Text = "爱奇艺会员";
+            this.btn_getVideoVIP.Text = "获取会员";
             this.btn_getVideoVIP.UseVisualStyleBackColor = true;
             this.btn_getVideoVIP.Click += new System.EventHandler(this.btn_getVideoVIP_Click);
             // 

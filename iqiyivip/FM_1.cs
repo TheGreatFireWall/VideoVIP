@@ -74,9 +74,11 @@ namespace VideoVIP
                 url = xianlu(4, text_url.Text);
             if (xl5.Checked)
                 url = xianlu(5, text_url.Text);
+            if (xl6.Checked)
+                url = xianlu(6, text_url.Text);
             if (checkBox.Checked == true)
             {
-                if (xl1.Checked)
+                if (xl1.Checked||xl6.Checked)
                 {
                     MessageBox.Show("该线路不可以在软件中播放");
                     return;
@@ -231,6 +233,19 @@ namespace VideoVIP
                     url = "http://www.avziliao.com/ydisk/index.php?url=http://" + url.Replace("http://", "");
                 }
                 return url;
+            }
+            if(num==6)  //不支持QQ
+            {
+                if (videosource(url) == "qq")
+                {
+                    MessageBox.Show("线路6不支持QQ！");
+                    return "";
+                }
+                else
+                {
+                    url = "http://api.kttis.com/parse.php?url=http://" + url.Replace("http://", "");
+                    return url;
+                }
             }
             else
                 return "";

@@ -15,16 +15,17 @@ namespace VideoVIP
         public FM_getvip()
         {
             InitializeComponent();
+            MessageBox.Show("会员为第三方提供!");
         }
 
         private void btn_get_Click(object sender, EventArgs e)
         {
+            this.Text = "密码是：a86869390A";
             webBrowser1.Navigate("http://ftp593852.host551.zhujiwu.me/");
             webBrowser1.Visible = true;
             btn_get.Visible = false;
             btn_getmore.Visible = false;
             label1.Visible = false;
-            text_psw.Visible = true;
             this.Size = new Size(570, 380);
             //string ip = randomip();
             //string time = standardtime();
@@ -48,6 +49,7 @@ namespace VideoVIP
 
         private void btn_getmore_Click(object sender, EventArgs e)
         {
+            this.Text = "会员获取   ————ck66提供";
             string url = "http://www.ck66.cn/about/vip/";
             webBrowser1.Navigate(url);
             webBrowser1.Visible = true;

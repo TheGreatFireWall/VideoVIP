@@ -43,6 +43,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.xl4 = new System.Windows.Forms.RadioButton();
             this.xl5 = new System.Windows.Forms.RadioButton();
+            this.xl6 = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // text_url
@@ -186,11 +187,23 @@
             this.xl5.Text = "线路5";
             this.xl5.UseVisualStyleBackColor = true;
             // 
+            // xl6
+            // 
+            this.xl6.AutoSize = true;
+            this.xl6.Location = new System.Drawing.Point(307, 31);
+            this.xl6.Name = "xl6";
+            this.xl6.Size = new System.Drawing.Size(53, 16);
+            this.xl6.TabIndex = 14;
+            this.xl6.TabStop = true;
+            this.xl6.Text = "线路6";
+            this.xl6.UseVisualStyleBackColor = true;
+            // 
             // FM_1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(447, 117);
+            this.Controls.Add(this.xl6);
             this.Controls.Add(this.xl5);
             this.Controls.Add(this.xl4);
             this.Controls.Add(this.label2);
@@ -232,6 +245,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.RadioButton xl4;
         private System.Windows.Forms.RadioButton xl5;
+        private System.Windows.Forms.RadioButton xl6;
     }
 }
 
